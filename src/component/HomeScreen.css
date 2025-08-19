@@ -1,0 +1,61 @@
+.formData {
+  /* position: relative;
+    top: 20vh; */
+  text-align: center;
+  /* border: 2px solid rgb(255, 0, 0); */
+  background-color: white;
+  padding: 5vh 0vh;
+  margin: 0vh 10vh;
+  margin-top: 2vh;
+  /* margin: 0vh 40vh; */
+}
+.formData h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5vh;
+  background-color: white;
+  /* margin-bottom: 5vh; */
+}
+.formData .addUserBtn {
+  /* border: 2px solid green; */
+  background-color: white;
+  text-align: right;
+  margin-right: 10vh;
+}
+.formData .addUserBtn button {
+  padding: 2vh 5vh;
+  /* border: transparent; */
+  border-radius: 2vh;
+  border: 2px solid rgb(64, 103, 10);
+  background-color: rgb(101, 163, 13);
+  color: white;
+  font-weight: bold;
+  font-size: 3vh;
+  text-transform: uppercase;
+}
+.loginCardDiv {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  justify-content: center;
+  justify-content: space-evenly;
+  /* padding: 4vh 0vh; */
+  margin-top: 2vh;
+  /* border:5px solid purple; */
+  /* grid-template-columns: repeat(4, 288px); */
+}
+
+@media (min-width: 100px) and (max-width: 699px) {
+  .loginCardDiv {
+    /* background-color: red; */
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 970px) {
+  .loginCardDiv {
+    grid-template-columns: auto auto;
+    /* background-color: green; */
+    /* justify-content: center; */
+  }
+}

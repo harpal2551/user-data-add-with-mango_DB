@@ -1,0 +1,99 @@
+.formFillTable {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;   /* overlay fix */
+  top: 0;
+  left: 0;
+  z-index: 999;      /* upar sab ke */
+}
+.formFill form {
+  position: relative;   /* 👈 yeh line add karo */
+  box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.75);
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 2vh;
+  padding: 5vh 6vh;
+  justify-self: center;
+}
+
+/* .formFill form {
+  box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.75);
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 2vh;
+  padding: 3vh 6vh;
+  justify-self: center;
+} */
+.formFill form input {
+  padding: 1vh 2vh;
+  width: 50vh;
+  margin-top: 4vh;
+  align-items: center;
+  display: block;
+  border: 1px solid black;
+  border-radius: 1.3vh;
+}
+.formFill form .submitBtn {
+  margin-top: 3vh;
+  padding: 1vh 1.3vh;
+  font-weight: bold;
+  border: transparent;
+  border-radius: 1vh;
+  background-color: rgb(101, 163, 13);
+  color: white;
+  text-align: center;
+}
+.closeWin {
+  position: absolute;
+  top: 5px;
+  /* padding: 1vh; */
+  right: 10px;
+  padding: 2px 2px 1px 2px;
+  background: transparent;
+  border-radius: 3vh;
+  border: none;
+  cursor: pointer;
+  color: white;
+  /* border-radius: 2vh; */
+  background-color: rgb(101, 163, 13);
+}
+
+
+@media (min-width: 100px) and (max-width: 699px) {
+  .closeWin{
+    background-color: rgba(100, 163, 13, 0.806);
+    color: black;
+    padding: 1vh;
+    font-size: 2vh;
+  }
+  .formFill form{
+    width: 33vh;
+  }
+  .formFill form input{
+    width: 30vh;
+    padding: 2.4vh;
+    margin-left: -1vh;
+    font-size: 2.5vh;
+  }
+  .formFill form .btnSubmit{
+    /* border: 2px solid red; */
+    text-align: center;
+  }
+  .formFill form .submitBtn{
+    font-size: 3vh;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 970px) {
+  .loginCardDiv {
+    grid-template-columns: auto auto;
+    /* background-color: green; */
+    /* justify-content: center; */
+  }
+}
