@@ -9,6 +9,12 @@
   margin-top: 2vh;
   /* margin: 0vh 40vh; */
 }
+.PopMessage{
+  position: relative;
+  display: none;
+  border: 2px solid red;
+  z-index: 999;
+}
 .formData h4 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 5vh;
@@ -31,6 +37,11 @@
   font-weight: bold;
   font-size: 3vh;
   text-transform: uppercase;
+  transition: 0.2s ease-in-out;
+}
+.addUserBtn button:hover{
+  /* color: black; */
+  background-color: rgb(91, 145, 15);
 }
 .loginCardDiv {
   display: grid;

@@ -1,0 +1,67 @@
+.cardPop {
+  position: fixed; /* stays on top and doesn’t take space */
+  top: 20px;       /* distance from top */
+  right: 20px;     /* distance from right */
+  z-index: 9999;   /* very high to appear above everything */
+  background-color: #f0fff0;
+  border: 1px solid #d1e7dd;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  display: none;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+  .wave {
+    position: absolute;
+    transform: rotate(90deg);
+    left: -32px;
+    /* top: 32px; */
+    width: 80px;
+    height: 2.9vh;
+    /* height: 2vh; */
+    fill: #04e4003a;
+  }
+  .icon-container {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #04e40048;
+    border-radius: 50%;
+    /* margin-left: 8px; */
+    margin-right: 2vh;
+  }
+  .icon {
+    width: 17px;
+    height: 17px;
+    color: #269b24;
+  }
+  .message-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+  }
+  .message-text,
+  .sub-text {
+    margin: 0;
+    cursor: default;
+  }
+  .message-text {
+    color: #269b24;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .sub-text {
+    font-size: 14px;
+    color: #555;
+  }
+  .cross-icon {
+    width: 18px;
+    height: 18px;
+    color: #555;
+    cursor: pointer;
+  }

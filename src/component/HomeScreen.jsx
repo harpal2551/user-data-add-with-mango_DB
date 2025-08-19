@@ -3,6 +3,7 @@ import "./HomeScreen.css";
 import LoginCard from "./LoginCard";
 import Form from "./Form";
 import axios from "axios";
+import MessagePop from "./MessagePop";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
 // const API = import.meta.env.VITE_API_URL || "http://192.168.43.161:5000/users";
@@ -31,7 +32,8 @@ function HomeScreen() {
   const addUser = async (form) => {
     try {
       const res = await axios.post(`${API}/users`, form);
-      setUsers((prev) => [...prev, res.data]);
+      setUsers((prev) => [res.data, ...prev]);
+      // setUsers((prev) => [...prev, res.data]);
       setShow(false);
       setError(null);
     } catch (err) {
@@ -81,6 +83,7 @@ function HomeScreen() {
     <div className="addUserForm">
       <div className="formData">
         <h4>User Data Information</h4>
+      <MessagePop className="PopMessage"/>
         {error && <div className="error">{error}</div>}
 
         <div className="addUserBtn">
